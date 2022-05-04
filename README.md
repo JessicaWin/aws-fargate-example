@@ -49,3 +49,15 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Build docker image
+
+```bash
+$ docker build -t aws-fargate-example:latest --target=development ./
+```
+
+## Run docker image
+
+```bash
+$ docker run -it -d -p 3000:3000 aws-fargate-example:latest
+```
