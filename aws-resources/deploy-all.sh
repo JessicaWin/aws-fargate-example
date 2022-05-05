@@ -7,3 +7,4 @@ sleep 60
 ./deploy-for-each-stage.sh iam $DELETE
 ./deploy-for-each-stage.sh vpc $DELETE
 ./deploy-for-each-stage.sh ecs $DELETE
+./deploy-for-each-stage.sh github-iam $DELETE
