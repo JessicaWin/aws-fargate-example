@@ -54,10 +54,21 @@ $ npm run test:cov
 
 ```bash
 $ docker build -t aws-fargate-example:latest --target=development ./
+
+# use ocker-compose to build image for one service/stage
+$ docker-compose build dev
+$ docker-compose build prod
+
+# use ocker-compose to build image for all services/stages
+$ docker-compose build
 ```
 
 ## Run docker image
 
 ```bash
 $ docker run -it -d -p 3000:3000 aws-fargate-example:latest
+
+# use ocker-compose to start specific service
+$ docker-compose up dev
+$ docker-compose up prod
 ```
