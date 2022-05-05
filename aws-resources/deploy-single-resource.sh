@@ -11,7 +11,7 @@ if [ -f "deploy.sh" ];then
     chmod 777 deploy.sh
     ./deploy.sh $DELETE
 else
-    echo "Deploy with deploy-for-each-stage.sh"
+    echo "Deploy with deploy-single-resource.sh"
     for i in "${STAGE_LIST[@]}"
     do
         STAGE=$i
